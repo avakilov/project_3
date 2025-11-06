@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savings & Growth Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson-client@3"></script>
+</head>
+<body>
+  <h1>Savings & Growth Explorer</h1>
+
+  <div class="controls">
+    <label for="year">Year: <span id="year-value">2019</span></label>
+    <input type="range" id="year" min="1960" max="2020" step="1" value="2019" />
+    <input type="text" id="country-filter" placeholder="Filter countries..." />
+    <button id="reset">Reset</button>
+  </div>
+
+  <div class="chart-container">
+    <div id="bar-chart"></div>
+    <div id="map"></div>
+  </div>
+
+  <div class="footer">
+    <p>Hover to see values • Click countries to highlight • Export available soon</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,66 +1,64 @@
 body {
-    background-color: #111;
-    color: #eee;
-    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
     text-align: center;
   }
   
   h1 {
-    margin-top: 15px;
-    color: #fff;
-    font-weight: 700;
+    margin: 15px 0;
+    font-size: 28px;
+    color: #ffffff;
   }
   
   .controls {
-    margin: 15px;
+    margin: 10px auto;
   }
   
   input[type="range"] {
     width: 200px;
-    margin: 0 10px;
+    vertical-align: middle;
   }
   
   .chart-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 20px auto;
-    width: 95%;
+    gap: 25px;
+    margin-top: 20px;
   }
   
   #bar-chart, #map {
-    background-color: #1a1a1a;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 0 12px rgba(255,255,255,0.1);
+    width: 620px;
+    height: 420px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    position: relative;
   }
   
-  #bar-chart {
-    width: 600px;
-    height: 400px;
-  }
-  
-  #map {
-    width: 650px;
-    height: 400px;
+  .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #aaa;
   }
   
   .tooltip {
     position: absolute;
-    background: rgba(20, 20, 20, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 6px 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     pointer-events: none;
     font-size: 13px;
   }
   
   .footer {
-    margin-top: 20px;
-    color: #aaa;
+    margin: 25px;
     font-size: 14px;
+    color: #bbb;
   }

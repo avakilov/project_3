@@ -1,64 +1,51 @@
 body {
     margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #f5f5f5;
-    font-family: 'Inter', sans-serif;
-    text-align: center;
+    font-family: system-ui, sans-serif;
+    background: #0d0d0d;
+    color: #e5e5e5;
   }
   
-  h1 {
-    margin: 15px 0;
-    font-size: 28px;
-    color: #ffffff;
+  nav.topnav {
+    border-bottom: 1px solid #333;
+    padding: 1rem 2rem;
+    background: #0d0d0d;
   }
   
-  .controls {
-    margin: 10px auto;
-  }
-  
-  input[type="range"] {
-    width: 200px;
-    vertical-align: middle;
-  }
-  
-  .chart-container {
+  section.controls {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 2rem;
+    border-bottom: 1px solid #333;
+    background: #111;
   }
   
-  #bar-chart, #map {
-    width: 620px;
-    height: 420px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255,255,255,0.05);
-    position: relative;
+  main.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
   }
   
-  .placeholder {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #aaa;
+  svg {
+    width: 100%;
+    height: 480px;
+    background: #151515;
+    border: 1px solid #222;
+    border-radius: 8px;
   }
   
   .tooltip {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 6px 10px;
-    border-radius: 4px;
+    position: fixed;
     pointer-events: none;
-    font-size: 13px;
+    background: rgba(30, 30, 30, 0.95);
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.1s;
+    z-index: 10;
   }
   
-  .footer {
-    margin: 25px;
-    font-size: 14px;
-    color: #bbb;
-  }
